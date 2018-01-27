@@ -1,0 +1,66 @@
+﻿<Window x:Class="Client1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="697" Width="1000" Loaded="Window_Loaded">
+    <TabControl>
+        <TabItem Name="tabMain" Header="Client">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="64*" />
+                    <ColumnDefinition Width="183*"/>
+                    <ColumnDefinition Width="247*" />
+                    <ColumnDefinition Width="246*" />
+                    <ColumnDefinition Width="247*" />
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".5*" />
+                    <RowDefinition Height=".8*" />
+                    <RowDefinition Height="5*" />
+                    <RowDefinition Height=".6*" />
+                    <RowDefinition  Height=".6*"/>
+                    <RowDefinition  Height=".5*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Name="tbWindow" Grid.Row="0" Grid.ColumnSpan="2" Text="Client 1" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" FontSize="16" Grid.Column="2" Margin="218,2,217,1" ></TextBlock>
+                <Button Name="btnRefresh" VerticalAlignment="Top" Click="btnRefreshClick" Height="49" Grid.Row="3" Grid.ColumnSpan="2" Margin="0,0,246,0" Grid.Column="3" Grid.RowSpan="2">Refresh Category files list</Button>
+                <Button Name="btnAdd" Grid.Row="1"  Grid.Column="0" VerticalAlignment="Top"  Click="btnAddClick" Height="26" Grid.ColumnSpan="2">Add Selected File(s)</Button>
+                <Button Name="btnClear" Grid.Row="1"  Grid.Column="1" VerticalAlignment="Top"  Click="btnClearClick" HorizontalAlignment="Right" Height="26" Width="248" Grid.ColumnSpan="2">Clear File(s) List</Button>
+                <Button Name="btnOpenFile" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Left" Click="btnOpenClick" Width="247" >Open Page</Button>
+
+                <Button  Name="btnDelete" Grid.Row="4" HorizontalAlignment="Right" Content="Delete File" Click="btnDeleteClick" Width="246" RenderTransformOrigin="0.482,-1.434" Grid.Column="3"/>
+                <TextBox Grid.Row="1" Text="Category" Name="txtCategory" TextChanged="TextBox_TextChanged" VerticalAlignment="Bottom" Height="24" Grid.ColumnSpan="2" />
+
+                <TextBlock Name="txtFileName" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="5" Grid.RowSpan="1" Text="" Margin="0,5,0,3"></TextBlock>
+
+                <TextBlock Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="1" Text="Files in Server"  HorizontalAlignment="Center" FontWeight="Black" Margin="82,0,81,31"/>
+                <TextBlock Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="3" Grid.ColumnSpan="1" Text="Category:"  FontWeight="Black" RenderTransformOrigin="1.526,0.031" Margin="94,0"></TextBlock>
+                <ComboBox Name="cbCategory" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" Grid.Column="3" SelectedIndex="0" SelectionChanged="cbCategorySelectionChanged" Margin="245,0,72,0" Height="30" Width="176" Grid.ColumnSpan="2"></ComboBox>
+                <ListBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Name="lstFilesToSend" SelectionMode="Multiple" />
+                <ListBox Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="2" Name="lstFiles" VerticalAlignment="Stretch" SelectionChanged="lstFiles_SelectionChanged" />
+
+                <Button Name="btnSendSelectFiles" Grid.Row="3"  Grid.Column="0" Content="Send Selected File(s)" Click="btnSendClick" Grid.ColumnSpan="2"/>
+                <Button  Name="btnAnalyzeSelectFiles" Grid.Row="3" Content="Analyze Selected File(s)" Click="btnAnalyzeClick" Margin="1,0,0,0" Grid.Column="2"/>
+                <Grid HorizontalAlignment="Left" Height="100" Grid.RowSpan="3" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="2"/>
+                <Button Name="btnDownload" Grid.Row="4" Grid.Column="4" HorizontalAlignment="Right" Content="Download File" Click="btnDownloadClick" Width="248" RenderTransformOrigin="0.482,-1.434" Margin="0,0,-1,0"/>
+                <TextBox Name="txtPath" Grid.Column="3" HorizontalAlignment="Left" Height="29" Margin="12,377,0,0" Grid.Row="2" TextWrapping="Wrap"  VerticalAlignment="Top" Width="481" Grid.ColumnSpan="2"  RenderTransformOrigin="0.471,1.724"/>
+                <Label Name="lblPath" Content="File Virtual Path :" Grid.Column="3" HorizontalAlignment="Left" Margin="12,346,0,0" Grid.Row="2" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.058,0.462"/>
+                <TextBox Name="txtServerPort" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="104,16,0,0" Grid.Row="4" TextWrapping="Wrap"  VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.071,0.022"/>
+                <Label Name="lblSPort" Content="Server Port:" Grid.Column="2" HorizontalAlignment="Left" Margin="29,13,0,0" Grid.Row="4" VerticalAlignment="Top" RenderTransformOrigin="-0.039,0.481"/>
+                <TextBox Name="txtClientPort" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="41,17,0,0" Grid.Row="4" TextWrapping="Wrap"  VerticalAlignment="Top" Width="86" RenderTransformOrigin="-0.437,-0.065"/>
+                <Label Name="lblCPort" Content="Client Port:" HorizontalAlignment="Left" Margin="32,14,0,0" Grid.Row="4" VerticalAlignment="Top" RenderTransformOrigin="-2.382,0.212" Grid.ColumnSpan="2"/>
+                <TextBox Name="txtDownLoadFolder" Grid.ColumnSpan="2" Grid.Column="3" HorizontalAlignment="Left" Height="25" Margin="83,6,0,0" Grid.Row="5" TextWrapping="Wrap"  VerticalAlignment="Top" Width="410"/>
+                <Label Name="lblPhysicalPath" Content="Download Folder:" Grid.Column="2" HorizontalAlignment="Left" Margin="218.25,6,0,0" Grid.Row="5" VerticalAlignment="Top" RenderTransformOrigin="-0.579,0.212" Grid.ColumnSpan="2" Width="106" Height="25"/>
+                <Grid Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="98" Margin="0,0,-0.625,0" Grid.Row="3" VerticalAlignment="Top" Width="987" Grid.RowSpan="2">
+                    <Grid HorizontalAlignment="Left" Height="98" Margin="493,0,0,0" VerticalAlignment="Top" Width="494"/>
+                </Grid>
+
+
+            </Grid>
+        </TabItem>
+
+    </TabControl>
+</Window>

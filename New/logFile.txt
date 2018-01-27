@@ -1,0 +1,10 @@
+
+                                      CodeAnalysis - Version 2.0
+    ==============================================================================================
+     Tue May  2 08:55:23 2017
+     Path: "F:\GUIversion\CodeAnalyzerEx\New"
+     Args: *.h, *.cpp, /f, /r
+                                                                               
+
+    searched     5 dirs
+   processed     2 files

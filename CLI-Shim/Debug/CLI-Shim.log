@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (CLI-Shim.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  CLIShim.cpp
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  CLIShim.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+MockChannel.lib(Utilities.obj) : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+  CLI-Shim.vcxproj -> F:\52640\GUIversion\CodeAnalyzerEx\Debug\CLIShim.dll
+  CLI-Shim.vcxproj -> F:\52640\GUIversion\CodeAnalyzerEx\Debug\CLIShim.pdb (Partial PDB)

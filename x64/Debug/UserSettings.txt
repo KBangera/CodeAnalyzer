@@ -1,0 +1,14 @@
+C:\Users\James\Desktop\CodeAnalyzer\Parser
+true
+true
+true
+false
+FolderSelection
+true
+false
+false
+false
+true
+false
+false
+true

@@ -1,0 +1,7 @@
+﻿  XmlDocument.cpp
+  XmlParser.cpp
+  XmlElement.cpp
+  xmlElementParts.cpp
+  Tokenizer.cpp
+  Generating Code...
+  XmlDocument.vcxproj -> \\vmware-host\Shared Folders\Documents\OOD\project2\help\InstrSolProject1S17\Debug\XmlDocument.lib

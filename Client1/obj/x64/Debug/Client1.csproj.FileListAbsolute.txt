@@ -1,0 +1,16 @@
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\bin\x64\Debug\Client1.exe.config
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\obj\x64\Debug\Client1.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\obj\x64\Debug\MainWindow.g.cs
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\obj\x64\Debug\App.g.cs
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\obj\x64\Debug\Client1_MarkupCompile.cache
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\obj\x64\Debug\Client1_MarkupCompile.lref
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\bin\x64\Debug\Client1.exe
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\bin\x64\Debug\Client1.pdb
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\bin\x64\Debug\CLIShim.dll
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\bin\x64\Debug\CLIShim.pdb
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\obj\x64\Debug\MainWindow.baml
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\obj\x64\Debug\Client1.g.resources
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\obj\x64\Debug\Client1.Properties.Resources.resources
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\obj\x64\Debug\Client1.csproj.GenerateResource.Cache
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\obj\x64\Debug\Client1.exe
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\Client1\obj\x64\Debug\Client1.pdb

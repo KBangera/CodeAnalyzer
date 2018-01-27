@@ -1,0 +1,16 @@
+
+  <StrongComponents>
+    <record>
+      <key>
+        1
+      </key>
+      <children>
+        <childKey>
+          Test1.cpp
+        </childKey>
+        <childKey>
+          Test1.h
+        </childKey>
+      </children>
+    </record>
+  </StrongComponents>

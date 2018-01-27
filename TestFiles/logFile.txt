@@ -1,0 +1,16 @@
+
+                                      CodeAnalysis - Version 1.4
+    ==============================================================================================
+     Sun Apr  2 03:20:08 2017
+     Path: "G:\CodeAnalyzerEx\TestFiles"
+     Args: *.h, *.cpp, /f, /r
+                                                                               
+                          Functions Exceeding Metric Limits and Public Data
+    ==============================================================================================
+                 file name        type                               name    line    size    cplx
+    -----------------------  ----------  ---------------------------------  ------  ------  ------
+
+
+
+    searched     4 dirs
+   processed     3 files

@@ -1,0 +1,22 @@
+﻿  MsgServer.cpp
+\\vmware-host\shared folders\documents\ood\project4\main\remotepublisher\sockets\sockets.h(270): error C2065: 'StaticLogger': undeclared identifier
+  \\vmware-host\shared folders\documents\ood\project4\main\remotepublisher\msgserver\msgserver.cpp(235): note: see reference to function template instantiation 'bool SocketListener::start<ClientHandler>(CallObj &)' being compiled
+          with
+          [
+              CallObj=ClientHandler
+          ]
+\\vmware-host\shared folders\documents\ood\project4\main\remotepublisher\sockets\sockets.h(270): error C2039: 'write': is not a member of '`global namespace''
+\\vmware-host\shared folders\documents\ood\project4\main\remotepublisher\sockets\sockets.h(270): error C3861: 'write': identifier not found
+\\vmware-host\shared folders\documents\ood\project4\main\remotepublisher\sockets\sockets.h(284): error C2065: 'StaticLogger': undeclared identifier
+\\vmware-host\shared folders\documents\ood\project4\main\remotepublisher\sockets\sockets.h(284): error C2039: 'write': is not a member of '`global namespace''
+\\vmware-host\shared folders\documents\ood\project4\main\remotepublisher\sockets\sockets.h(284): error C3861: 'write': identifier not found
+\\vmware-host\shared folders\documents\ood\project4\main\remotepublisher\sockets\sockets.h(295): error C2065: 'StaticLogger': undeclared identifier
+\\vmware-host\shared folders\documents\ood\project4\main\remotepublisher\sockets\sockets.h(295): error C2039: 'write': is not a member of '`global namespace''
+\\vmware-host\shared folders\documents\ood\project4\main\remotepublisher\sockets\sockets.h(295): error C3861: 'write': identifier not found
+  Utilities.cpp
+  Sockets.cpp
+  Logger.cpp
+  HttpMessage.cpp
+  FileSystem.cpp
+  Cpp11-BlockingQueue.cpp
+  Generating Code...

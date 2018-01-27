@@ -1,0 +1,10 @@
+
+                                      CodeAnalysis - Version 2.0
+    ==============================================================================================
+     Tue Apr  4 00:28:46 2017
+     Path: "\\vmware-host\Shared Folders\Documents\OOD\project3\main\CodeAnalyzerEx\Cpp11-BlockingQueue"
+     Args: *.h, *.cpp, /f, /r, ..\HTMLFolder
+                                                                               
+
+    searched     9 dirs
+   processed     2 files

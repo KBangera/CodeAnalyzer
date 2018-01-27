@@ -1,0 +1,141 @@
+
+<//////////////////////////////////////
+DepAnal.h.html
+
+Author : Karthik Bangera
+
+Maintenance History:
+Version : 1.0
+///////////////////////////////////////>
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<script src = "Javascripts\1javascript.js"></script><script src = "Javascripts\2javascript.js"></script><script src = "Javascripts\3btnUpdate.js"></script>
+<link rel = "stylesheet" href ="Css\1styling.css"></link>
+<link rel = "stylesheet" href ="Css\2expandCollapse.css"></link>
+</head>
+
+<body>
+
+<div class="blog-header">
+<a class=" btn-primary btn-sm active" href="HomePage.html">Back To HomePage
+</a>
+<div style="font-family:calibri">
+
+<div class="col-sm-12 ">
+<h4><b><u><i>Dependencies of the selected file:</u></b></h4><ol class="nav"><ul align="left" style = "list-style-type:square" color="darkslategrey"><li align="left"><a  color="darkslategrey" align="center" href="DepAnal.cpp.html">DepAnal.cpp</a></li></ul>
+</i>
+
+</ol>
+
+</div>
+</div>
+
+<div class="col-sm-8 ">
+
+<h3 align="center" style="font-family:calibri" color="darkslategrey"><b><u><i>DepAnal.h</i></u></b></h3>
+
+</div>
+
+</div>
+
+<div  class="container col-sm-8 blog-main">
+
+<pre>
+#pragma once
+/////////////////////////////////////////////////////////////////////////
+// DepAnal.h - Demonstrate how to start developing dependency analyzer //
+//                                                                     //
+// Author: Karthik Bangera                                             //
+// Source: Jim Fawcett, CSE687 - Object Oriented Design, Spring 2017   //
+/////////////////////////////////////////////////////////////////////////
+/*
+Package Operations:
+==================
+The module demonstrates the dependency analysis.
+
+Build Process:
+==============
+Required files
+- Parser.h
+- Graph.h
+- NoSqlDb.h
+- itokcollection.h
+- ScopeStack.h 
+- Tokenizer.h
+- SemiExp.h
+- TypeTableAnal.h
+- TypeTable.h
+
+Maintenance History:
+====================
+ver 1.0 : 10 Mar 2017
+- demonstrates dependency analysis feature.
+*/
+#include &ltunordered_map&gt
+#include &ltset&gt
+#include &ltiostream&gt
+#include &ltstring&gt
+#include &ltvector&gt
+
+#include "../Parser/Parser.h"
+#include "../Analyzer/Executive.h"
+#include "../SemiExp/itokcollection.h"
+#include "../ScopeStack/ScopeStack.h"
+#include "../Tokenizer/Tokenizer.h"
+#include "../SemiExp/SemiExp.h"
+#include "../TypeTableAnal/TypeTableAnal.h"
+#include "../TypeTable/TypeTable.h"
+#include "../Graph/Graph.h"
+#include "../NoSqlDb/NoSqlDb.h"
+
+#pragma warning (disable : 4101)  // disable warning re unused variable x, below
+
+namespace Scanner
+<a type="button"   class=""   data-toggle="collapse" data-target=".1"  onclick="btnUpdate(this,1)">+</a><span  class="collapse in 1">{...}</span><span  class="collapse 1">{
+	using FileName = std::string;
+	class DepAnal
+<a type="button"   class=""   data-toggle="collapse" data-target=".2"  onclick="btnUpdate(this,2)">+</a>	<span  class="collapse in 2">{...}</span><span  class="collapse 2">{
+
+	public:
+		DepAnal()
+<a type="button"   class=""   data-toggle="collapse" data-target=".3"  onclick="btnUpdate(this,3)">+</a>		<span  class="collapse in 3">{...}</span><span  class="collapse 3">{
+			toker = nullptr;
+		}</span>
+		~DepAnal() 
+<a type="button"   class=""   data-toggle="collapse" data-target=".4"  onclick="btnUpdate(this,4)">+</a>		<span  class="collapse in 4">{...}</span><span  class="collapse 4">{
+
+		}</span>
+
+		std::unordered_map&ltFileName, std::vector&ltFileName&gt&gt& fetchDepTable();
+		void doDepAnal(std::string file);
+		void setGlobalObj(CodeAnalysis::TypeTable gTable);
+		void setTokerObj(Scanner::Toker tok);
+		void addDep(std::string rFile, std::string lFile);
+		bool isGlobalType(std::string);
+		std::string fetchFile(std::string tok);
+		void insertInDb();
+		void saveToDBInXml(std::string fileName);
+		void setMapObject(std::unordered_map&ltstd::string, CodeAnalysis::TypeTableDetails&gt tTable);
+		void depDFS(std::string r, std::string l);
+		std::vector&ltstd::string&gt st;
+		bool ifExists(std::string line, std::string text);
+		void dependencyAnalysis(std::vector&ltstd::string&gt allFiles, std::string file);
+		
+	private:
+		NoSQLDB::NoSqlDb&ltstd::string&gt db;
+		Scanner::Toker* toker;
+		CodeAnalysis::TypeTable globalTable;
+		std::unordered_map&ltstd::string, CodeAnalysis::TypeTableDetails&gt typeTable;
+		std::unordered_map&ltFileName, std::vector&ltFileName&gt&gt depTable;
+
+	};</span>
+}</span>
+</pre>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+﻿  OnlinePublisherExecutive.cpp
+  MockChannel.cpp
+f:\52640\guiversion\codeanalyzerex\mockchannel\mockchannel.cpp(222): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\52640\guiversion\codeanalyzerex\mockchannel\mockchannel.cpp(223): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  CommHandler.cpp
+  Generating Code...
+     Creating library F:\52640\GUIversion\CodeAnalyzerEx\x64\Debug\OnlinePublisher.lib and object F:\52640\GUIversion\CodeAnalyzerEx\x64\Debug\OnlinePublisher.exp
+CommHandler.obj : warning LNK4217: locally defined symbol ?createSendr@ObjectFactory@@QEAAPEAUISendr@@XZ (public: struct ISendr * __cdecl ObjectFactory::createSendr(void)) imported in function "public: __cdecl CommHandler::CommHandler(int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0CommHandler@@QEAA@HV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+CommHandler.obj : warning LNK4217: locally defined symbol ?createRecvr@ObjectFactory@@QEAAPEAUIRecvr@@XZ (public: struct IRecvr * __cdecl ObjectFactory::createRecvr(void)) imported in function "public: __cdecl CommHandler::CommHandler(int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0CommHandler@@QEAA@HV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+CommHandler.obj : warning LNK4217: locally defined symbol ?createMockChannel@ObjectFactory@@QEAAPEAUIMockChannel@@PEAUISendr@@PEAUIRecvr@@HV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z (public: struct IMockChannel * __cdecl ObjectFactory::createMockChannel(struct ISendr *,struct IRecvr *,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)) imported in function "public: __cdecl CommHandler::CommHandler(int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0CommHandler@@QEAA@HV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+  OnlinePublisher.vcxproj -> F:\52640\GUIversion\CodeAnalyzerEx\x64\Debug\OnlinePublisher.exe
+  OnlinePublisher.vcxproj -> F:\52640\GUIversion\CodeAnalyzerEx\x64\Debug\OnlinePublisher.pdb (Full PDB)

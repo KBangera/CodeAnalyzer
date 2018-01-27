@@ -1,0 +1,22 @@
+﻿  CommHandler.cpp
+  TypeTable.cpp
+  Sockets.cpp
+f:\52640\guiversion\codeanalyzerex\sockets\sockets.cpp(161): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+f:\52640\guiversion\codeanalyzerex\sockets\sockets.cpp(180): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+f:\52640\guiversion\codeanalyzerex\sockets\sockets.cpp(199): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+f:\52640\guiversion\codeanalyzerex\sockets\sockets.cpp(240): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+f:\52640\guiversion\codeanalyzerex\sockets\sockets.cpp(248): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+f:\52640\guiversion\codeanalyzerex\sockets\sockets.cpp(267): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+  MsgServer.cpp
+  MsgClient.cpp
+f:\52640\guiversion\codeanalyzerex\msgclient\msgclient.cpp(122): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\52640\guiversion\codeanalyzerex\msgclient\msgclient.cpp(123): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\52640\guiversion\codeanalyzerex\msgclient\msgclient.cpp(172): warning C4267: 'argument': conversion from 'size_t' to 'DWORD', possible loss of data
+  MockChannel.cpp
+f:\52640\guiversion\codeanalyzerex\mockchannel\mockchannel.cpp(222): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\52640\guiversion\codeanalyzerex\mockchannel\mockchannel.cpp(223): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Logger.cpp
+  HttpMessage.cpp
+  FileSystem.cpp
+  Generating Code...
+  CommunicationHandler.vcxproj -> F:\52640\GUIversion\CodeAnalyzerEx\x64\Debug\CommunicationHandler.lib

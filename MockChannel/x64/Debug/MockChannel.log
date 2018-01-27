@@ -1,0 +1,3 @@
+﻿     Creating library \\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\x64\Debug\MockChannel.lib and object \\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\x64\Debug\MockChannel.exp
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+\\vmware-host\Shared Folders\Documents\OOD\project4\Main\RemotePublisher\x64\Debug\MockChannel.exe : fatal error LNK1120: 1 unresolved externals
